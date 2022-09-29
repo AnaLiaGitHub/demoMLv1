@@ -51,7 +51,38 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/topsecret
+//Envía ubicación y mensaje de emisor
+POST http://{{host}}/topsecret_split/kenobi
+Content-Type: application/json
+
+{
+  "distance": 637.08,
+  "message": ["este", "", "", "mensaje", ""]
+}
 
 ###
-POST http://localhost:8080/topsecret
+//Envía ubicación y mensaje de emisor
+POST http://{{host}}/topsecret_split/skywalker
+Content-Type: application/json
+
+{
+  "distance": 299.99,
+  "message": ["", "es", "", "", "secreto"]
+}
+
+###
+//Envía ubicación y mensaje de emisor
+POST http://{{host}}/topsecret_split/sato
+Content-Type: application/json
+
+{
+  "distance": 500.02,
+  "message": ["este", "", "un", "", ""]
+}
+
+###
+//Envía ubicación y mensaje de emisor
+GET http://{{host}}/topsecret_split
+Content-Type: application/json
+
+
