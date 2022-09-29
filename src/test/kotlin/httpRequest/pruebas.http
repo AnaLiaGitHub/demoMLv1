@@ -1,0 +1,57 @@
+###
+//Datos de mensaje y ubicación exitoso
+POST http://{{host}}/topsecret
+Content-Type: application/json
+
+{
+  "satellites": [
+    {
+      "name": "kenobi",
+      "distance": 637.08,
+      "message": ["este", "", "", "mensaje", ""]
+    },
+    {
+      "name": "skywalker",
+      "distance": 299.99,
+      "message": ["", "es", "", "", "secreto"]
+    },
+    {
+      "name": "sato",
+      "distance": 500.02,
+      "message": ["este", "", "un", "", ""]
+    }
+  ]
+}
+
+<> 2022-09-28T152522.200.json
+
+###
+//No se puede determinar ubicación
+POST http://{{host}}/topsecret
+Content-Type: application/json
+
+{
+  "satellites": [
+    {
+      "name": "kenobi",
+      "distance": 237.00,
+      "message": ["este", "", "", "mensaje", ""]
+    },
+    {
+      "name": "skywalker",
+      "distance": 300.00,
+      "message": ["", "es", "", "", "secreto"]
+    },
+    {
+      "name": "sato",
+      "distance": 500.00,
+      "message": ["este", "", "un", "", ""]
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/topsecret
+
+###
+POST http://localhost:8080/topsecret
